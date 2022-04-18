@@ -1,0 +1,8 @@
+variavel = input('Digite algo: ')
+print('O tipo primitivo desse valor é: {} '.format(type(variavel)))
+print('É numero? {}' .format(variavel.isnumeric()))
+print('É alfanumerico? {}' .format(variavel.isalnum()))
+print('É alfabetico? {}' .format(variavel.isalpha()))
+print('É decimal? {}' .format(variavel.isdecimal()))
+print('É espaço? {}' .format(variavel.isspace()))
+print('É maiúsculo? {}' .format(variavel.isupper()))
