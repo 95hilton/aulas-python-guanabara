@@ -13,6 +13,6 @@ prestacao = casa/(anos*12)
 percent_salario = prestacao/casa
 
 if prestacao > salario * 0.30:
-    print('Não será possível realizar o empréstimo, pois a parcela é {} MAIOR {} do que 30% do seu salário!\nSalário: {:.2f}\nValor das parcelas: {:.2f}\nValor do Imóvel: {:.2f}'.format(cores['vermelhobold'], cores['limpa'], salario, prestacao, casa))
+    print('Não será possível realizar o empréstimo, pois a parcela é {} MAIOR {} do que 30% do seu salário!\nSalário: R$ {:.2f}\nValor das parcelas: R$ {:.2f}\nValor do Imóvel: R$ {:.2f}'.format(cores['vermelhobold'], cores['limpa'], salario, prestacao, casa))
 else:
-    print('{}Parabéns!! Sua casa própria está à caminho! Vamos realizar o empréstimo!\nSalário: {:.2f}\nValor das parcelas: {:.2f}\nValor do Imóvel: {:.2f}{}' .format(cores['verdebold'], salario, prestacao, casa, cores['limpa']))
+    print('{}Parabéns!! Sua casa própria está à caminho! Vamos realizar o empréstimo!\nSalário: R$ {:.2f}\nValor das parcelas: R$ {:.2f}\nValor do Imóvel: R$ {:.2f}{}' .format(cores['verdebold'], salario, prestacao, casa, cores['limpa']))

@@ -12,15 +12,15 @@ base = int(input("""Digite a base de conversão:
                     \n """))
 if base == 1:
     print('convertendo {} para base BINÁRIO.....\n' .format(num))
-    result = bin(num).replace('0b', '')
+    result = bin(num)[2:]
     print('O resultado é: {} '.format(result))
 elif base == 2:
     print('convertendo {} para base OCTAL.....\n' .format(num))
-    result = oct(num)
+    result = oct(num)[2:]
     print('O resultado é: {} '.format(result))
 elif base == 3:
     print('convertendo {} para base HEXADECIMAL.....\n'.format(num))
-    result = hex(num)
+    result = hex(num)[2:]
     print('O resultado é: {} '.format(result))
 else:
-     print('Opção inválida! Tente novamente mais tarde!')
+    print('Opção inválida! Tente novamente mais tarde!')

@@ -11,12 +11,12 @@ imc = peso / altura**2
 
 
 if imc < 18.5:
-    print('Seu IMC é: {:.2f} e você está ABAIXO DO PESO.' .format(imc))
-elif 18.5 < imc <= 25:
-    print('Seu IMC é: {:.2f} e você está NO PESO IDEAL.' .format(imc))
-elif 25 < imc <= 30:
-    print('Seu IMC é: {:.2f} e você tem SOBREPESO.' .format(imc))
-elif 30 < imc <= 40:
-    print('Seu IMC é: {:.2f} e você está OBESO.' .format(imc))
+    print('Seu IMC é: {:.1f} e você está ABAIXO DO PESO.' .format(imc))
+elif 18.5 <= imc < 25:
+    print('Seu IMC é: {:.1f} e você está NO PESO IDEAL.' .format(imc))
+elif 25 <= imc < 30:
+    print('Seu IMC é: {:.1f} e você tem SOBREPESO.' .format(imc))
+elif 30 <= imc < 40:
+    print('Seu IMC é: {:.1f} e você está OBESO.' .format(imc))
 else:
     print('Seu IMC é: {:.2f} e você tem OBESIDADE MÓRBIDA.'.format(imc))

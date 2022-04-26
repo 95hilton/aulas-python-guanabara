@@ -7,12 +7,21 @@ Seu programa também deveria mostrar o tempo que falta ou que passou do prazo"""
 
 from datetime import date
 
-ano = int(input('Digite o seu ANO de NASCIMENTO: '))
-idade = date.today().year - ano
+sexo = str(input('Digite seu sexo: [M] para Masculino [F] para Feminino: ')).upper()
 
-if idade < 18:
-    print('Você ainda deverá se alistar, quando completar 18 ANOS!\nIdade atual: {} anos' .format(idade))
-elif idade > 18:
-    print('Já passou do tempo do alistamento!\nIdade atual: {} anos'.format(idade))
+if sexo == 'F':
+    print('Você não precisará se alistar!')
+elif sexo == 'M':
+    ano = int(input('Digite o seu ANO de NASCIMENTO: '))
+    idade = date.today().year - ano
+    tempo_alistamento = 18 - idade
+
+    if idade < 18:
+        print('Você ainda deverá se alistar, quando completar 18 ANOS!\nIdade atual: {} anos\nTempo que ainda falta para alistar: {} anos' .format(idade, tempo_alistamento))
+    elif idade > 18:
+        print('Já passou {} anos do tempo do alistamento!\nIdade atual: {} anos'.format(tempo_alistamento*-1, idade))
+    else:
+        print('É hora de se alistar!\nIdade atual: {} anos'.format(idade))
+
 else:
-    print('É hora de se alistar!\nIdade atual: {} anos'.format(idade))
+    print('Não compreendi sua resposta. Tente novamente mais tarde!')
