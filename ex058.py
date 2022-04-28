@@ -1,7 +1,7 @@
 '''Melhore o jogo do DESAFIO 28 onde o computador vai pensar em um número entre 0 e 10.
 Só que agora o jogador vai tentar adivinhar até acertar, mostrando no final quantos palpites foram necessários para vencer'''
 
-from random import randrange
+from random import randint
 from time import sleep
 
 numero = ''
@@ -10,7 +10,7 @@ sorteado = -1
 while numero != sorteado:
     numero = int(input('Digite o número inteiro entre 0 e 10, que você acha que eu escolhi: '))
     contador += 1
-    sorteado = int(randrange(0, 11))
+    sorteado = int(randint(0, 11))
     print('AGUARDE...')
     sleep(3)
     if numero == sorteado:
