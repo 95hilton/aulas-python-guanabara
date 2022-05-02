@@ -171,6 +171,7 @@ Elabore um programa que calcule o valor a ser pago por um produto, considerando 
 - 3x ou mais no cartão 20% de juros
 ## Ex045
 Crie um programa que faça o computador jogar JOKENPÔ com você
+# Repetições em Python(for)
 ## Ex046
 Faça um programa que mostre na tela uma contagem regressiva para o estouro de fogos de artifício, indo de 10 até 0 com uma pausa de
 1 segundo entre eles
@@ -197,6 +198,7 @@ Desenvolva um programa que leia o nome, idade e sexo de 4 pessoas. No final do p
 - A média de idade do grupo
 - Qual é o nome do homem mais velho
 - Quantas mulheres tem menos de 20 anos
+- # Repetições em Python(while)
 ## Ex057
 Faça um programa que leia o sexo de uma pessoa, mas só aceite os valores 'M' ou 'F'. Caso esteja errado peça a digitação novamente até ter um valor correto
 ## Ex058
@@ -309,10 +311,11 @@ Ao final mostre o conteúdo das três listas geradas.
 
 ## Ex084
 Crie um programa onde o usuário digite uma expressão qualquer que use parênteses. Seu aplicativo deverá analisar se a expressão passada está com os parênteses abertos e fechados na ordem correta.
-
+# Listas (parte 2)
 ## Ex085
 ## Ex086
 ## Ex087
 ## Ex088
 ## Ex089
-## Ex080
+# Dicionários em Python
+## Ex090
