@@ -328,3 +328,18 @@ Faça um programa que ajude um jogador da MEGA SENA a criar palpites. O programa
 Crie um program que leia nome e duas notas de vários alunos e guarde tudo em uma lista composta. No final, mostre um boletim contendo a média de cada um e permita que o usuário possa mostrar as notas de cada aluno individualmente.
 # Dicionários em Python
 ## Ex090
+Faça um programa que leia nome e média de um aluno, guardando também a situação em um dicionário. No final, mostre o conteúdo da estrutura na tela.
+## Ex091
+Crie um programa onde 4 jogadores joguem um dado e tenha resultados aleatórios. Guarde esses resultados em um dicionário. No final, coloque essse dicionário em ordem sabendo que o vencedor tirou o maior número no dado.
+## Ex092
+Crie um program qeu leia nome, ano de nascimento e carteira de trabalho e cadastre-os (com idade) em um dicionário se por acaso a CTPS for digerente de ZERO, o dicionário receberá também o ano de contratação e o salário. Calcule e acrescente, além da idade, com quantos anos a pessoa vai se aposentar
+## Ex093
+Crie um programa qeu gerencie o aproveitamento de um jogador de futebol. O programa vai ler o nome do jogador e quantas partidas ele jogou. Depois vai lera a quantidade de gols feitos em cada partida. No final, tudo isso será guardado em um dicionário, incluindo o total de gols feitos durante o campeonato.
+## Ex094
+Crie um programa que leia nome, sexo e idade de várias pessoas, guardando os dados de cada pessoa em um dicionário e todos os dicionários em uma lista. No final, mostre:
+* Quantas pessoas foram cadastradas
+* A média de idade do grupo
+* Uma lista com todas as mulheres
+* Uma lista com todas as pessoas com idade acima da média
+## Ex095
+Aprimore o desafio 093 para qeu ele funcione com vários jogadores, incluindo um sistema de visualização de detalhes do aproveitamento de cada jogador.
