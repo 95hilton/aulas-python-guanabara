@@ -410,3 +410,23 @@ Adicione também as docstrings da função.
 Faça um mini-sistema que utilize o interactive Help do Python. O usuário vai digitar o comando e o manual vai aparecer. 
 Quando o usuário digitar a palavra "FIM", o programa se encerrará
 OBS: Use cores
+# Ex107
+Crie um módulo chamado modeda.py que tenha as funções incorporadas aumentar(), diminuir, dobro() e metade().
+Faça também um programa que importe esse módulo e use algumas dessas funções
+
+# Ex108
+Adapte o código do desafio 107, criando uma função adicional chamada moeda() que consiga mostrar os valores como um valor monetário formatado.
+
+# Ex109
+Modifique as funções que foram criadas no desafio 107 para ue elas aceitem um parâmetro a mais, informando se o valor retornado por elas vai ser ou não formatado pela função moeda(), desenvolvido no desafio 108.
+
+# Ex110
+Adicione ao módulo moeda.py criado nos desafios anteriores uma função chamada resumo, que mostre na tela algumas informações que já temos no módulo criado até aqui.
+
+# Ex111
+Crie um pacote chamado utilidadesCeV que tenha dois módulos internos chamados moeda e dado.
+
+Transfira todas as funções utilizadas nos desafios 107, 108 e 109 para o primeiro pacote e mantenha tudo funcionando
+
+# Ex112
+Dentro do pacote utilidadesCeV que criamos no desafio 111, temos um módulo chamado dado. Crie uma função chamada leiaDinheiro() que seja capaz de funcionar como a função input(), mas com uma validadção de dados para acietar apenas valores que sejam monetários.
