@@ -430,3 +430,14 @@ Transfira todas as funções utilizadas nos desafios 107, 108 e 109 para o prime
 
 # Ex112
 Dentro do pacote utilidadesCeV que criamos no desafio 111, temos um módulo chamado dado. Crie uma função chamada leiaDinheiro() que seja capaz de funcionar como a função input(), mas com uma validadção de dados para acietar apenas valores que sejam monetários.
+
+# Ex113
+Reescreva a função leiaInt() que fizemos no desafio 104, incluindo agora a possibilidade da digitação de um número de tipo inválido.
+Aproveite e crie também uma função com o nome leiaFloat() com a mesma funcionalidade.
+
+# Ex114
+Crie um código em Python que teste se o site Pudim está acessível pelo computador usado.
+
+# Ex115
+Crie um pequeno sistema modularizado que permita cadastrar pessoas pelo seu nome e idade em um arquivo de texto simples.
+O sistema só vai ter 2 opções: cadastrar uma nova pessoa e listar todas as pessoas cadastradas.
