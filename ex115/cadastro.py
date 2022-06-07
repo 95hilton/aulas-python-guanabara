@@ -5,29 +5,36 @@ def cadastraPessoa():
     print('=' * 30)
     print('NOVO CADASTRO'.center(30))
     print('=' * 30)
-    try:
-        nome = str(input('Nome: '))
-    except KeyboardInterrupt:
-        print('Digitação interrompida pelo usuário.')
-    except:
-        print('Não foi possível cadastrar o nome.')
-    try:
-        idade = int(input('Idade: '))
-    except (ValueError, TypeError):
-        print('Digitação interrompida pelo usuário.')
-    else:
-        print(f'Novo registro de {nome} adicionado.')
+    while True:
+        try:
+            nome = str(input('Nome: ')).upper().strip()
+            if nome != '':
+                break
+            else:
+                print('Digite um nome válido!')
+        except KeyboardInterrupt:
+            print('Digitação interrompida pelo usuário.')
+    while True:
+        try:
+            idade = int(input('Idade: '))
+            if idade != '':
+                break
+        except KeyboardInterrupt:
+            print('Digitação interrompida pelo usuário.')
+        except (ValueError, TypeError):
+            print('Digite uma idade válida.')
 
     try:
         arquivo = open('cadastro.txt', 'a', encoding='utf-8')
-    except FileNotFoundError:
-        print('Arquivo de texto inexistente. Criando o arquivo.')
-        arquivo = open('cadastro.txt', 'w')
+    except Exception as erro:
+        print(f'Erro ao preencher o arquivo: {erro.__class__}.')
     else:
         try:
             arquivo.write(f'\n{nome}\t\t\t{idade} anos')
             arquivo.close()
-        except:
-            print('Erro ao salvar o arquivo.')
+        except Exception as erro:
+            print(f'Erro ao salvar o arquivo: {erro.__class__}')
+        else:
+            print(f'Novo registro de {nome} adicionado.')
 
     menu.menuPrincipal()
