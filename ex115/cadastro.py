@@ -30,7 +30,7 @@ def cadastraPessoa():
         print(f'Erro ao preencher o arquivo: {erro.__class__}.')
     else:
         try:
-            arquivo.write(f'\n{nome}\t\t\t{idade} anos')
+            arquivo.write(f'{nome}\t\t\t{idade} anos\n')
             arquivo.close()
         except Exception as erro:
             print(f'Erro ao salvar o arquivo: {erro.__class__}')
